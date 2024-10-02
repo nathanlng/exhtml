@@ -1,29 +1,82 @@
-.navigation{
-   color: black;
-   background-color: rgb(228, 201, 165);
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
 
+header {
+  background-color: antiquewhite;
+  width: 100vw;
+  height: 10vh;
+  border-bottom: 0;
 }
-h1{
-    margin: 0;
-    background-color: rgb(208, 183, 150);
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family:"Gill Sans", sans-serif;
-    font-size: 3em;
+
+.navbar {
+  position: absolute;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
 }
-#p1{
-    width: 100%;
-    
+
+.nom {
+  font-size: 2em;
 }
-#t1{
-    display: flex;
+
+.navbar .lien ul {
+  display: flex;
 }
-#p2{
-    height: 20em;
-    width: 15em;
+
+.navbar .lien ul li {
+  display: flex;
+  margin: 0 10px;
 }
-#p3{
-    height: 20em;
-    width: 15em;
+
+.conditionPartage {
+  color: blue;
+  text-decoration: underline;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.photoAcceuil {
+  display: flex;
+  justify-content: center;
+}
+
+.backImg {
+  margin-top: 50px;
+  width: 50%;
+  height: 50%;
+  margin-bottom: 50px;
+}
+
+#photoCouture {
+  width: 45.25%;
+}
+
+#photoTissu {
+  display: inline-block;
+  width: 51%;
+}
+
+#par1 {
+  width: 45%;
+  margin: 20px;
+}
+
+#par2 {
+  width: 45%;
+  margin: 20px;
+}
+
+#parContainer {
+  display: flex;
 }

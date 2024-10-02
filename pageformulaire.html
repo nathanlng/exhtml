@@ -7,15 +7,23 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Ewapoue</h1>
-    <div class="navigation">
 
-      <a href="pageacceuil.html">Acceuil</a>
-      <a href="pageboutique.html">Boutique</a>
-      <a href="pagehistoire.html">La maison</a>
-      <a href="pageformulaire.html">Contact</a>
-    </div>
+    <nav class="navbar">
+      <a href="#" class="nom">EMADONE</a>
+      <div class="lien">
+        <ul>
+          <li><a href="pageacceuil.html">Acceuil</a></li>
+          <li><a href="pageboutique.html">Boutique</a></li>
+          <li><a href="pagehistoire.html">La maison</a></li>
+          <li><a href="pageformulaire.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header></header>
+
     <h2>mon formulaire de contact</h2>
+
     <form action="" method="">
       <fieldset>
         <table width="500" border="0" cellspacing="2" cellpadding="5">
@@ -77,28 +85,41 @@
           <tr>
             <td>Votre note</td>
             <td>
-              <input type="range" name="maNote" min="0" max="5" step="1" />
+              <input
+                type="range"
+                name="Range"
+                value=""
+                min="0"
+                max="5"
+                step="0.5"
+              />
             </td>
           </tr>
           <tr>
             <td>Fichiers additionnels</td>
-            <td><input type="file" /></td>
+            <td><input type="file" multiple /></td>
+          </tr>
+          <tr>
+            <td>Comment avez-vous connu la marque ?</td>
+            <td>
+              <textarea
+                name="repQuestion"
+                id=""
+                placeholder="J'ai connu la marque ..."
+              ></textarea>
+            </td>
           </tr>
         </table>
-        <p>Comment avez-vous connu la marque ?</p>
-        <textarea
-          name="repQuestion"
-          id=""
-          placeholder="J'ai connu la marque ..."
-        ></textarea>
       </fieldset>
       <input type="checkbox" name="condition" id="" required />
       <label for="condition">
         accepter les
-        <a href="https://emadone.com/policies/legal-notice" target="_blank"
-          >condition d'utilisation et de partage</a
-        ></label
-      >
+        <a
+          href="https://emadone.com/policies/legal-notice"
+          target="_blank"
+          class="conditionPartage"
+          >condition d'utilisation et de partage</a>
+      </label>
       <br />
       <br />
       <button type="submit">envoyer</button>
@@ -106,5 +127,6 @@
       <br />
       <button type="reset">réinitialiser</button>
     </form>
+    
   </body>
 </html>
