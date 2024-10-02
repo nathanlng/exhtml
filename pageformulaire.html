@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formulaire</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Ewapoue</h1>
+    <div class="navigation">
+
+      <a href="pageacceuil.html">Acceuil</a>
+      <a href="pageboutique.html">Boutique</a>
+      <a href="pagehistoire.html">La maison</a>
+      <a href="pageformulaire.html">Contact</a>
+    </div>
+    <h2>mon formulaire de contact</h2>
+    <form action="" method="">
+      <fieldset>
+        <table width="500" border="0" cellspacing="2" cellpadding="5">
+          <caption></caption>
+          <tr>
+            <td>Votre prénom</td>
+            <td>
+              <input type="text" name="unPrenom" placeholder="toto" required />
+            </td>
+          </tr>
+          <tr>
+            <td>Votre nom</td>
+            <td>
+              <input type="text" name="unNom" placeholder="tutu" required />
+            </td>
+          </tr>
+          <tr>
+            <td>votre pays</td>
+            <td>
+              <select required name="monPays" id="">
+                <option value="0">--choisissez--</option>
+                <option value="1" selected>France</option>
+                <option value="2">autre</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Votre ville</td>
+            <td>
+              <input
+                type="text"
+                name="uneVille"
+                required
+                placeholder="Tombouctou"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Votre mail</td>
+            <td>
+              <input
+                type="text"
+                name="unMail"
+                required
+                placeholder="toto.tutu@mail.com"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Votre commentaire</td>
+            <td>
+              <textarea
+                name="unCommentaire"
+                id=""
+                placeholder="Mon avis ..."
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>Votre note</td>
+            <td>
+              <input type="range" name="maNote" min="0" max="5" step="1" />
+            </td>
+          </tr>
+          <tr>
+            <td>Fichiers additionnels</td>
+            <td><input type="file" /></td>
+          </tr>
+        </table>
+        <p>Comment avez-vous connu la marque ?</p>
+        <textarea
+          name="repQuestion"
+          id=""
+          placeholder="J'ai connu la marque ..."
+        ></textarea>
+      </fieldset>
+      <input type="checkbox" name="condition" id="" required />
+      <label for="condition">
+        accepter les
+        <a href="https://emadone.com/policies/legal-notice" target="_blank"
+          >condition d'utilisation et de partage</a
+        ></label
+      >
+      <br />
+      <br />
+      <button type="submit">envoyer</button>
+      <br />
+      <br />
+      <button type="reset">réinitialiser</button>
+    </form>
+  </body>
+</html>

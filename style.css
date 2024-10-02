@@ -1,0 +1,29 @@
+.navigation{
+   color: black;
+   background-color: rgb(228, 201, 165);
+
+}
+h1{
+    margin: 0;
+    background-color: rgb(208, 183, 150);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family:"Gill Sans", sans-serif;
+    font-size: 3em;
+}
+#p1{
+    width: 100%;
+    
+}
+#t1{
+    display: flex;
+}
+#p2{
+    height: 20em;
+    width: 15em;
+}
+#p3{
+    height: 20em;
+    width: 15em;
+}
